@@ -14,9 +14,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_1:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17100:17099"
@@ -40,9 +41,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_2:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17101:17099"
@@ -66,9 +68,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_3:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17102:17099"
@@ -92,9 +95,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_4:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17103:17099"
@@ -118,9 +122,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_5:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17104:17099"
@@ -144,9 +149,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_6:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17105:17099"
@@ -170,9 +176,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_7:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17106:17099"
@@ -196,9 +203,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_8:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17107:17099"
@@ -222,9 +230,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_9:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17108:17099"
@@ -247,9 +256,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_10:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17109:17099"
@@ -273,9 +283,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_11:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17110:17099"
@@ -298,9 +309,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_12:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17111:17099"
@@ -323,9 +335,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_13:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17112:17099"
@@ -348,9 +361,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_14:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17113:17099"
@@ -373,9 +387,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_15:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17114:17099"
