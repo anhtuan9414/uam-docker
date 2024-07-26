@@ -14,9 +14,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_1:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17100:17099"
@@ -40,9 +41,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_2:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17101:17099"
@@ -66,9 +68,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_3:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17102:17099"
@@ -92,9 +95,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_4:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17103:17099"
@@ -118,9 +122,10 @@ services:
       memlock: -1
     oom_score_adj: -700
     mem_swappiness: 10
+    tmpfs:
+      - /root/.uam:size=500m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-      - "/opt/uam_data/uam_5:/root/.uam"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
     ports:
       - "127.0.0.1:17104:17099"
