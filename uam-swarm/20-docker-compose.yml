@@ -15,7 +15,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -42,7 +42,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -69,7 +69,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -96,7 +96,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -123,7 +123,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -150,7 +150,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -177,7 +177,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -204,7 +204,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -231,7 +231,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -257,7 +257,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -284,7 +284,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -310,7 +310,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -336,7 +336,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -362,7 +362,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -388,7 +388,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -414,7 +414,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -440,7 +440,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -466,7 +466,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -492,7 +492,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
@@ -518,7 +518,7 @@ services:
     oom_score_adj: -700
     mem_swappiness: 10
     tmpfs:
-      - /root/.uam:size=500m
+      - /root/.uam:size=1000m
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
     command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT} $${NETLIMUP} $${NETLIMDOWN}"
