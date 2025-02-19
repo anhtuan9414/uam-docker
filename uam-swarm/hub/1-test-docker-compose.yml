@@ -10,11 +10,10 @@ services:
     cap_add:
       - IPC_LOCK
     networks:
-      default:
-        ipv4_address: 172.106.0.20
+      - uam-default
 
 networks:
-    default:
+    uam-default:
         driver: bridge
         ipam:
             driver: default
