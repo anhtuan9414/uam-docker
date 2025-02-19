@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  uam_1:
+    image: tuanna9414/uam:latest
+    container_name: uam_1
+    restart: always
+    environment:
+      - WALLET=${PBKEY}
+    cap_add:
+      - IPC_LOCK
+    networks:
+      default:
+        ipv4_address: 172.106.0.20
+
+networks:
+    default:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.106.0.0/16
