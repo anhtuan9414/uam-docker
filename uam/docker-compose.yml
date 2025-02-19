@@ -6,17 +6,8 @@ services:
     container_name: uam
     hostname: uam
     restart: always
-    stop_grace_period: 5s
-    mem_limit: 4500m
-    mem_reservation: 3000m
-    oom_kill_disable: true
     cap_add:
       - NET_ADMIN
-    ulimits:
-      rtprio: 95
-      memlock: -1
-    oom_score_adj: -700
-    mem_swappiness: 10
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
       - "/opt/uam_data/uam:/root/.uam"
