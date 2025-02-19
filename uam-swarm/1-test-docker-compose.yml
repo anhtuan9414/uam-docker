@@ -11,6 +11,6 @@ services:
       memlock: -1
     volumes:
       - "./entrypoint_test.sh:/opt/entrypoint.sh"
-    command: /bin/sh -c "chmod +x /opt/entrypoint_test.sh && /opt/entrypoint.sh $${PBKEY}"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
     environment:
       - PBKEY=${PBKEY}
