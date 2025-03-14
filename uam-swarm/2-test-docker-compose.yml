@@ -9,13 +9,9 @@ services:
       - IPC_LOCK
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
-    ports:
-      - "127.0.0.1:17100:17099"
-      - "4160:4160"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
     environment:
       - PBKEY=${PBKEY}
-      - PPORT=4160
 
   uam_2:
     image: debian:bullseye-slim
@@ -25,10 +21,6 @@ services:
       - IPC_LOCK
     volumes:
       - "./entrypoint.sh:/opt/entrypoint.sh"
-    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY} $${PPORT}"
-    ports:
-      - "127.0.0.1:17101:17099"
-      - "4161:4161"
+    command: /bin/sh -c "chmod +x /opt/entrypoint.sh && /opt/entrypoint.sh $${PBKEY}"
     environment:
       - PBKEY=${PBKEY}
-      - PPORT=4161
