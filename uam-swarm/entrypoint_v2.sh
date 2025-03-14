@@ -6,4 +6,4 @@ rm $file
 wget --no-check-certificate https://github.com/anhtuan9414/temp-2/raw/main/$file
 dpkg -i /tmp/$file
 cd /opt/uam/
-./uam --pk $1 --no-ui
+./uam --pk $1 --http [0.0.0.0]:17099 --no-ui
